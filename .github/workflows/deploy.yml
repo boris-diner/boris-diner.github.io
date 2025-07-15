@@ -1,12 +1,9 @@
-name: Deploy Zola site
-
-permissions:
-  contents: write
+name: Build and Deploy Zola site
 
 on:
   push:
     branches:
-      - main
+      - main   # or your default branch
 
 jobs:
   build-and-deploy:
@@ -16,11 +13,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
-          submodules: true  # in case you use themes as submodules
+          submodules: true   # if you use submodules, else remove this line
 
       - name: Install Zola
         run: |
-          curl -L -A "Mozilla/5.0" https://github.com/getzola/zola/releases/download/v0.21.0/zola-v0.21.0-x86_64-unknown-linux-gnu.tar.gz -o zola.tar.gz
+          curl -L https://github.com/getzola/zola/releases/download/v0.21.0/zola-v0.21.0-x86_64-unknown-linux-gnu.tar.gz -o zola.tar.gz
           tar -xzf zola.tar.gz
           sudo mv zola /usr/local/bin/
           zola --version

@@ -18,4 +18,4 @@ extra.publications_types = [
 
 ## Topic of interest
 
-My research activities focuses on fast direct solvers.
+My research focuses on fast direct solvers for computational electromagnetics, particularly for wave scattering problems involving dielectric and composite materials. I develop efficient algorithms that exploit the structure of integral equation formulations to reduce computational cost and enable scalable simulations of large and complex electromagnetic systems.

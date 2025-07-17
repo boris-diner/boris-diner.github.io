@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block title -%}
+<title>Projects | {{ config.title }}</title>
+{% endblock title -%}
+
+{% block content %}
+<div class="container max-w-3xl mx-auto px-4">
+  <div class="pt-8">
+    <h1 class="font-bold font-sans break-normal text-gray-900 text-3xl">Projects</h1>
+
+    {# Render section content as HTML from Markdown #}
+    {% if section.content %}
+    <div class="mb-6 text-gray-700 prose max-w-3xl">
+      {{ section.content | markdownify | safe }}
+    </div>
+    {% endif %}
+
+    {% if section.description %}
+    <p class="text-gray-600 mt-2">{{ section.description }}</p>
+    {% endif %}
+  </div>
+  <hr class="border-b-1 border-gray-400 my-6">
+  <div class="space-y-6">
+    {% for page in section.pages %}
+    <div class="border rounded-xl p-4 hover:shadow transition">
+      <h2 class="text-2xl font-semibold text-indigo-800">
+        <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
+      </h2>
+      {% if page.description %}
+      <p class="text-gray-600 mt-1">{{ page.description }}</p>
+      {% endif %}
+      {% if page.date %}
+      <p class="text-sm text-gray-500 mt-2">Published: {{ page.date }}</p>
+      {% endif %}
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock content %}

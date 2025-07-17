@@ -1,13 +1,13 @@
 +++
 title = "Article 2"
-date = 2020-05-18
+date = 2026-04-15
 
 
 [extra]
-authors = [ "Kodama Mononoke" ]
+authors = [ "Boris Diner", "Yaniv Brick" ]
 publication_types = "Conference paper"
 featured = true
-publication = "2020 IEE rainbow workshop"
+publication = "2026 IEEE TAP"
 type="conferences"
 url_pdf = "path_to_pdf"
 url_slides = "path_to_slides"

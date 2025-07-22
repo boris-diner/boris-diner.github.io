@@ -1,6 +1,6 @@
 +++
 title = "Article 1"
-date = 2026-03-16
+date = 2026-07-01
 
 [extra]
 authors = [ "Boris Diner", "Yaniv Brick" ]

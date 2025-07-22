@@ -1,5 +1,6 @@
 {% import 'macros/contact.html' as macros_contact -%}
 {% import 'macros/blog.html' as macros_blog -%}
+{% import "macros/projects.html" as projects %}
 
 {% macro dot_lang() -%}
   {% if lang == config.default_language -%}{{ "" }}{% else -%}{{ "." ~ lang }}{% endif -%}

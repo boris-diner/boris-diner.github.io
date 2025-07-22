@@ -18,11 +18,15 @@
         <loc>https://boris-diner.github.io/projects/</loc>
     </url>
     <url>
+        <loc>https://boris-diner.github.io/projects/test-project/</loc>
+        <lastmod>2025-07-22</lastmod>
+    </url>
+    <url>
         <loc>https://boris-diner.github.io/publications/</loc>
     </url>
     <url>
         <loc>https://boris-diner.github.io/publications/paper1/</loc>
-        <lastmod>2026-03-16</lastmod>
+        <lastmod>2026-07-01</lastmod>
     </url>
     <url>
         <loc>https://boris-diner.github.io/publications/paper2/</loc>
